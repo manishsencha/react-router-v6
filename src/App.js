@@ -5,7 +5,7 @@ import About from "./Components/About/About"
 import Body from "./Components/Body/Body"
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
